@@ -29,14 +29,109 @@
       </header>
 
       <section class="work-intro">
-        <p class="eyebrow">Work</p>
-        <h1>Case studies on the way</h1>
-        <p>
-          This space will host detailed breakdowns of CFD experiments, viz
-          studies, and product handoffs. Check back soon as I publish the first
-          batch.
-        </p>
+        <div class="work-subnav">
+          <a href="#research" class="active">Research publications</a>
+          <a href="#general">General projects</a>
+        </div>
+      </section>
+
+      <section class="work-section" id="research">
+        <header class="work-section__header">
+          <p class="eyebrow small">Research publications</p>
+          <h2>Numerical aero-thermal study of flow around high pressure NGV cascade and film cooling study</h2>
+        </header>
+        <div class="case">
+          <div class="case__media">
+            <button class="slider-btn prev" aria-label="Previous slide">‹</button>
+            <div class="case__slider" data-autoplay="6000">
+              <figure class="case-slide">
+                <img
+                  src="project_data/published/ngv/LS89%20blade%20grid.png"
+                  alt="LS89 blade grid"
+                />
+                <figcaption>Grid for the LS89 blade</figcaption>
+              </figure>
+              <figure class="case-slide">
+                <img
+                  src="project_data/published/ngv/htc_compare_sst.png"
+                  alt="Comparison of turbulence models in HTC prediction"
+                />
+                <figcaption>
+                  Comparison of turbulence models kw SST and Transition SST in htc
+                  prediction
+                </figcaption>
+              </figure>
+              <figure class="case-slide">
+                <img
+                  src="project_data/published/ngv/film_cooling.png"
+                  alt="Film cooling setup"
+                />
+                <figcaption>Film cooling setup</figcaption>
+              </figure>
+              <figure class="case-slide">
+                <img
+                  src="project_data/published/ngv/contour_film.png"
+                  alt="Contour of velocity field for film cooling"
+                />
+                <figcaption>
+                  Contour of the velocity field for film cooling.
+                </figcaption>
+              </figure>
+              <figure class="case-slide">
+                <img
+                  src="project_data/published/ngv/shockwaves.png"
+                  alt="Schlieren vs shadowgraph comparison"
+                />
+                <figcaption>
+                  Comparison of the Schlieren snapshot (left) and density
+                  gradient based shadowgraph (right) from simulation for the LS89
+                  blade
+                </figcaption>
+              </figure>
+            </div>
+            <button class="slider-btn next" aria-label="Next slide">›</button>
+          </div>
+          <div class="case__details">
+            <p>
+              A quick set of highlights from a full aero-thermal investigation
+              of the LS89 turbine guide vane with special emphasis on surface
+              heat transfer and film cooling behavior.
+            </p>
+            <ul class="case-points">
+              <li>Placeholder: methodology outline</li>
+              <li>Placeholder: solver setup + mesh strategy</li>
+              <li>Placeholder: validation metrics & key findings</li>
+              <li>
+                <a href="#" target="_blank" rel="noopener noreferrer"
+                  >Bachelor's thesis (placeholder link)</a
+                >
+              </li>
+            </ul>
+            <a
+              class="text-link"
+              href="https://drive.google.com/drive/folders/1LlinUJNrAVTlCuZupLKNNZuRZ4AOJeYj?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View the full poster ↗</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="work-section" id="general">
+        <header class="work-section__header">
+          <p class="eyebrow small">General projects</p>
+          <h2>Build log coming soon</h2>
+        </header>
+        <div class="case general">
+          <p>
+            I'll catalog ongoing experiments, prototypes, and visualization
+            tooling here. Expect walkthroughs, repos, and quick demos sourced
+            from <code>project_data/general</code> as they mature.
+          </p>
+        </div>
       </section>
     </div>
+    <script src="work.js"></script>
   </body>
 </html>

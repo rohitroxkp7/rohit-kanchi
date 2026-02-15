@@ -169,13 +169,13 @@ body {
 .eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   color: var(--accent);
   margin: 0;
 }
 
 .eyebrow.small {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   letter-spacing: 0.18em;
 }
 
@@ -399,7 +399,7 @@ body {
 }
 
 .nav-cta {
-  display: none;
+  display: inline-flex;
 }
 
 .work-intro {
@@ -410,6 +410,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  align-items: center;
+  text-align: center;
 }
 
 .work-intro h1 {
@@ -417,21 +419,181 @@ body {
   font-size: clamp(2rem, 4vw, 3rem);
 }
 
+.work-subnav {
+  margin-top: 1.25rem;
+  display: inline-flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.work-subnav a {
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  padding: 0.4rem 1.2rem;
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+}
+
+.work-subnav a.active {
+  color: #041218;
+  background: linear-gradient(120deg, #65ffda, #5bc8ff);
+  border-color: transparent;
+  box-shadow: 0 10px 20px rgba(101, 255, 218, 0.25);
+}
+
+.work-section {
+  border-radius: 24px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.02);
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.work-section__header h2 {
+  margin: 0.25rem 0 0;
+  font-size: clamp(1.6rem, 3vw, 2.3rem);
+}
+
+.case {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.case.general {
+  grid-template-columns: 1fr;
+}
+
+.case__media {
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+  border: 1px solid var(--border);
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.case__slider {
+  position: relative;
+  width: 100%;
+  height: 520px;
+}
+
+.case-slide {
+  margin: 0;
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.case-slide img {
+  width: 100%;
+  height: calc(100% - 70px);
+  object-fit: contain;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.08), transparent);
+}
+
+.case-slide figcaption {
+  margin: 0;
+  padding: 0.75rem 1rem;
+  background: rgba(4, 5, 10, 0.7);
+  font-size: 0.9rem;
+  line-height: 1.4;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.case-slide.active {
+  position: relative;
+  opacity: 1;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: rgba(4, 5, 10, 0.7);
+  color: var(--text);
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.5rem;
+  line-height: 1;
+  z-index: 2;
+}
+
+.slider-btn.prev {
+  left: 0.75rem;
+}
+
+.slider-btn.next {
+  right: 0.75rem;
+}
+
+.case__details {
+  border-radius: 24px;
+  border: 1px solid var(--border);
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.02);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.case-points {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.case-points li + li {
+  margin-top: 0.35rem;
+}
+
+.case-points a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.text-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
 @media (max-width: 960px) {
   .hero {
     grid-template-columns: 1fr;
   }
-
-  .nav-links {
-    display: none;
-  }
-
-  .nav-cta {
-    display: inline-flex;
-  }
 }
 
 @media (max-width: 600px) {
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .hero__intro {
     text-align: center;
     align-items: center;
@@ -456,5 +618,13 @@ body {
 
   .peek-card {
     padding: 1.25rem;
+  }
+
+  .case {
+    grid-template-columns: 1fr;
+  }
+
+  .case__slider {
+    height: 380px;
   }
 }
