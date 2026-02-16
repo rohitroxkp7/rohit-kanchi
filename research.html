@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Research Projects | Rohit Kanchi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-grid">
+      <header class="site-header">
+        <nav class="nav">
+          <div class="logo">RK</div>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html" class="active">Research Projects</a></li>
+            <li><a href="general.html">General Projects</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+          <a class="primary-button nav-cta" href="mailto:hello@rohitkanchi.com"
+            >Say hello</a
+          >
+        </nav>
+      </header>
+
+      <section class="work-intro">
+        <p class="eyebrow">Research projects</p>
+        <h1>This page presents all published / ongoing research work to date</h1>
+      </section>
+
+      <section class="work-section">
+        <header class="work-section__header">
+          <p class="eyebrow small">Research publications</p>
+          <h2>Numerical aero-thermal study of flow around high pressure NGV cascade and film cooling study</h2>
+        </header>
+        <div class="case" id="ngv-study">
+          <div class="case__media">
+            <button class="slider-btn prev" aria-label="Previous slide">‹</button>
+            <div class="case__slider" data-autoplay="6000">
+              <figure class="case-slide">
+                <img
+                  src="project_data/published/ngv/LS89%20blade%20grid.png"
+                  alt="LS89 blade grid"
+                />
+                <figcaption>Grid for the LS89 blade</figcaption>
+              </figure>
+              <figure class="case-slide">
+                <img
+                  src="project_data/published/ngv/htc_compare_sst.png"
+                  alt="Comparison of turbulence models in HTC prediction"
+                />
+                <figcaption>
+                  Comparison of turbulence models kw SST and Transition SST in htc
+                  prediction
+                </figcaption>
+              </figure>
+              <figure class="case-slide">
+                <img
+                  src="project_data/published/ngv/film_cooling.png"
+                  alt="Film cooling setup"
+                />
+                <figcaption>Film cooling setup</figcaption>
+              </figure>
+              <figure class="case-slide">
+                <img
+                  src="project_data/published/ngv/contour_film.png"
+                  alt="Contour of velocity field for film cooling"
+                />
+                <figcaption>
+                  Contour of the velocity field for film cooling.
+                </figcaption>
+              </figure>
+              <figure class="case-slide">
+                <img
+                  src="project_data/published/ngv/shockwaves.png"
+                  alt="Schlieren vs shadowgraph comparison"
+                />
+                <figcaption>
+                  Comparison of the Schlieren snapshot (left) and density
+                  gradient based shadowgraph (right) from simulation for the LS89
+                  blade
+                </figcaption>
+              </figure>
+            </div>
+            <button class="slider-btn next" aria-label="Next slide">›</button>
+          </div>
+          <div class="case__details">
+            <p>
+              In this study, the LS-89 transonic NGV blade heat transfer characteristics were studied numerically using ANSYS FLUENT. 
+              The following studies were conducted:
+            </p>
+            <ul class="case-points">
+              <li>Validation of numerical setup using experimental data. Heat transfer and blade isentropic mach number around airfoil surface was benchmarked.</li>
+              <li>Film cooling study was performed for two hole shapes-circular and 7-7-7 hole shape.</li>
+              <li>7-7-7 hole yielded superior film cooling performance.</li>
+              <li>For complete set of results and discussion, please refer to my Bachelor's thesis and presented poster below.</li>
+            </ul>
+            <a
+              class="text-link"
+              href="project_data/published/ngv/BTECH THESIS ROHIT.pdf"
+              download
+              >View the Bachelor's thesis ↗</a
+            >
+            <a
+              class="text-link"
+              href="https://drive.google.com/drive/folders/1LlinUJNrAVTlCuZupLKNNZuRZ4AOJeYj?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View the full poster ↗</a
+            >
+          </div>
+        </div>
+
+        <header class="work-section__header secondary">
+          <h2>Differentiable Singular Value Decomposition (SVD)</h2>
+        </header>
+        <div class="case" id="diffsvd">
+          <div class="case__media">
+            <button class="slider-btn prev" aria-label="Previous slide">‹</button>
+            <div class="case__slider" data-autoplay="6000">
+              <figure class="case-slide">
+                <img
+                  src="project_data/published/diffsvd/animation.gif"
+                  alt="Temporal POD mode sensitivity animation"
+                />
+                <figcaption>
+                  Temporal animation of the 6th POD mode sensitivity overlaid on
+                  vortical structures.
+                </figcaption>
+              </figure>
+              <figure class="case-slide">
+                <img
+                  src="project_data/published/diffsvd/compare_methods.jpg"
+                  alt="Computational efficiency comparison"
+                />
+                <figcaption>
+                  Computational efficiency comparison of real-valued proposed
+                  methods vs FD and RAD—smaller slope and wall time show better
+                  scalability.
+                </figcaption>
+              </figure>
+              <figure class="case-slide">
+                <img
+                  src="project_data/published/diffsvd/sens.jpg"
+                  alt="Singular value derivatives visualization"
+                />
+                <figcaption>
+                  x-direction singular value derivatives of POD modes from the
+                  JHTDB transitional boundary layer dataset, Q=0.001 iso-surfaces.
+                </figcaption>
+              </figure>
+              <figure class="case-slide">
+                <img
+                  src="project_data/published/diffsvd/vortical.jpg"
+                  alt="Vortical structures on flat plate"
+                />
+                <figcaption>
+                  Key vortical structures in the transitional region of flat-plate
+                  flow visualized via Q=0.001 iso-surfaces colored by velocity
+                  magnitude.
+                </figcaption>
+              </figure>
+              <figure class="case-slide">
+                <img
+                  src="project_data/published/diffsvd/wingtruss_opt.jpg"
+                  alt="Baseline vs optimized wing trusses"
+                />
+                <figcaption>
+                  Baseline and optimized wing trusses colored by sensitivity
+                  magnitude with bar thickness mapped to structural thickness.
+                </figcaption>
+              </figure>
+            </div>
+            <button class="slider-btn next" aria-label="Next slide">›</button>
+          </div>
+          <div class="case__details">
+            <p>
+              In this work, we differentiated the singular value decomposition using a hybrid adjoint-RAD based method, which scales favourably for large number of design variables with respect to chosen objective function. The following are the key contributions:
+            </p>
+            <ul class="case-points">
+              <li>We develop two adjoint-based approaches to compute the derivative of the SVD problem for general imaginary (square and rectangular) matrices efficiently.</li>
+              <li>We develop a RAD-based analytic formula to compute the singular value derivative with respect to a imaginary input matrix, which also works with real-valued matrices in a reduced form.</li>
+              <li>We propose a generic dot product identity as a tool to derive complex-valued RAD derivative formulae using FAD derivative formulae for imaginary differentiable functions.</li>
+              <li>Demonstration of algorithm using large DNS simulation dataset and wing truss optimization with 315 design variables.</li>
+            </ul>
+            <a class="text-link" href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=vM35l1YAAAAJ&citation_for_view=vM35l1YAAAAJ:2osOgNQ5qMEC" target="_blank" rel="noopener noreferrer"
+              >View supporting material ↗</a
+            >
+          </div>
+        </div>
+
+        <header class="work-section__header secondary">
+          <h2>UniFoil – A Universal Dataset of Airfoils in Transitional and Turbulent Regimes for Subsonic and Transonic Flows</h2>
+        </header>
+        <div class="case">
+          <div class="case__media">
+            <button class="slider-btn prev" aria-label="Previous slide">‹</button>
+            <div class="case__slider" data-autoplay="6000">
+              <figure class="case-slide">
+                <img
+                  src="project_data/published/unifoil/image16.png"
+                  alt="Different flow regimes"
+                />
+                <figcaption>Different flow regimes in the dataset.</figcaption>
+              </figure>
+              <figure class="case-slide">
+                <img
+                  src="project_data/published/unifoil/image21.png"
+                  alt="UniFoil teaser"
+                />
+                <figcaption>
+                  A sweep of simulations for different angles of attack and Mach
+                  numbers at Reynolds number of 5 million.
+                </figcaption>
+              </figure>
+              <figure class="case-slide">
+                <img
+                  src="project_data/published/unifoil/image25.png"
+                  alt="Follow UniFoil site"
+                />
+                <figcaption>Follow our website for more info!</figcaption>
+              </figure>
+            </div>
+            <button class="slider-btn next" aria-label="Next slide">›</button>
+          </div>
+          <div class="case__details">
+            <p>
+              In this work, I developed a dataset using ADflow solver.
+              The dataset consists of over half a million steady state RANS and Transition modelled simulations for airfoils in mainly two classes, fully turbulent (FT) and natural laminar flow (NLF).
+              Following are the key features of this dataset:
+            </p>
+            <ul class="case-points">
+              <li>30k FT and 4.8k NLF airfoil geometries.</li>
+              <li>~400k simulations for FT airfoils fully turbulent - RANS.</li>
+              <li>~50k simulations for NLF airfoils fully turbulent - RANS.</li>
+              <li>~50k simulations for NLF airfoils - RANS e^N transition model.</li>
+              <li>Comes with an interface - pip install unifoil</li>
+              <li>Presented at NeurIPS 2025 conference. Useful for 2D training of neural operators.</li>
+              <li>Refer to link below for more details !</li>
+            </ul>
+            <a class="text-link" href="https://benjaminmelanson.github.io/unifoilDocs/" target="_blank" rel="noopener noreferrer"
+              >Visit UniFoil site ↗</a
+            >
+            <a class="text-link" href="https://neurips.cc/virtual/2025/loc/san-diego/poster/121532" target="_blank" rel="noopener noreferrer"
+              >Presented this dataset at NeurIPS 2025 ↗</a
+            >
+            <a class="text-link" href="https://github.com/mdolab/adflow" target="_blank" rel="noopener noreferrer"
+              >ADflow ↗</a
+            >
+          </div>
+        </div>
+
+        <header class="work-section__header secondary">
+          <h2>Modal-Centric Field Inversion via Differentiable Proper Orthogonal Decomposition</h2>
+        </header>
+        <div class="case">
+          <div class="case__media">
+            <button class="slider-btn prev" aria-label="Previous slide">‹</button>
+            <div class="case__slider" data-autoplay="6000">
+              <figure class="case-slide">
+                <img
+                  src="project_data/published/diffpod/overview.png"
+                  alt="MCFI schematic"
+                />
+                <figcaption>
+                  Schematic of MCFI showing traditional field inversion vs
+                  modal-centric inversion in POD space.
+                </figcaption>
+              </figure>
+              <figure class="case-slide">
+                <img
+                  src="project_data/published/diffpod/opt.png"
+                  alt="Leading POD modes comparison"
+                />
+                <figcaption>
+                  Leading POD modes (initial, target, optimized) for the f2
+                  objective highlighting collapse near y = 0 vs symmetric ramp
+                  controller bias.
+                </figcaption>
+              </figure>
+            </div>
+            <button class="slider-btn next" aria-label="Next slide">›</button>
+          </div>
+          <div class="case__details">
+            <p>
+              In this work, the differentiable SVD mentioned above is extended to POD.
+              We use differentiable POD in modal centric field inversion.
+              The following key points explain what this work is about:
+            </p>
+            <ul class="case-points">
+              <li>Classic field inversion (CFI) in spatio-temporal state space can get computationally intensive.</li>
+              <li>CFI can become computationally intractable if the point to point spatial structures must be matched in optimization problem.</li>
+              <li>Instead, it is proposed to perform field inversion in the reduced state space through modal decomposition techniques, hence the name "modal centric field inversion". In this work, we chose POD for demonstration.</li>
+              <li>The advantage of this is that the modes obtained are strongly tied to the underlying dynamical system through SVD and can represent the spatio-temporal field through just a few modes.
+                This also entails inherent regularization for the optimization problem.
+              </li>
+              <li>Algorithm is verified through finite difference method and application demonstrated through the 2D viscous Burger's equation.</li>
+            </ul>
+            <a class="text-link" href="https://arxiv.org/pdf/2601.14858" target="_blank" rel="noopener noreferrer"
+              >View paper here ↗</a
+            >
+          </div>
+        </div>
+
+        <header class="work-section__header secondary">
+          <h2>Effects of Inlet Velocity Profile on the Bubble Dynamics in a Fluidized Bed Partially Filled with Geldart B Particles</h2>
+        </header>
+        <div class="case">
+          <div class="case__media">
+            <button class="slider-btn prev" aria-label="Previous slide">‹</button>
+            <div class="case__slider" data-autoplay="6000">
+              <figure class="case-slide">
+                <img
+                  src="project_data/published/bubble/grid.jpg"
+                  alt="Discretized computational domain"
+                />
+                <figcaption>
+                  Discretized computational domain showing 32 × 83 cells and the
+                  physical dimensions of 15.5 cm × 40 cm, plus initial bed height
+                  reference.
+                </figcaption>
+              </figure>
+              <figure class="case-slide">
+                <img
+                  src="project_data/published/bubble/profiles.png"
+                  alt="Inlet velocity profiles"
+                />
+                <figcaption>
+                  Different inlet velocity profiles for gas phase simulated in the
+                  present study.
+                </figcaption>
+              </figure>
+              <figure class="case-slide">
+                <img
+                  src="project_data/published/bubble/bubble_track.jpg"
+                  alt="Bubble tracking method steps"
+                />
+                <figcaption>
+                  Bubble tracking method: grayscale images, binary masks, and
+                  tracked bubble progression.
+                </figcaption>
+              </figure>
+              <figure class="case-slide">
+                <img
+                  src="project_data/published/bubble/exp_num.jpg"
+                  alt="Experimental vs numerical bubbles"
+                />
+                <figcaption>
+                  Comparison of numerically obtained bubbles with experimental
+                  observations using Syamlal-O’Brien and Gidaspow drag models.
+                </figcaption>
+              </figure>
+              <figure class="case-slide">
+                <img
+                  src="project_data/published/bubble/bubble_dynamics.jpg"
+                  alt="Bubble coalescence and breakup locations"
+                />
+                <figcaption>
+                  Locations of coalescence (left) and breakup (right) of bubbles
+                  for trapezoidal profile 2 with vorticity contour and velocity
+                  vectors.
+                </figcaption>
+              </figure>
+            </div>
+            <button class="slider-btn next" aria-label="Next slide">›</button>
+          </div>
+          <div class="case__details">
+            <p>
+              In this work, we studied the effects of varying the inlet velocity profile for a fluidized bed filled with Geldart B class of particles. The following key studies were conducted:
+            </p>
+            <ul class="case-points">
+              <li>Successfully validated numerical model with drag models Syamlal-O’Brien and Gidaspow's models against Experimental data. Gidaspow's model yielded better prediction for average bed height.</li>
+              <li>Validated approach used for studying bubble breakup and coalescence incidences using bubble dynamics capturing algorithm written in-house.</li>
+              <li>Results showed that the bubble dynamics which looks random to naked eye in fact follows very interesting patterns and these patterns linked with the inlet velocity profile can help to augment the bed heat transfer to desired characteristics.</li>
+            </ul>
+            <a class="text-link" href="https://www.mdpi.com/2311-5521/9/7/149" target="_blank" rel="noopener noreferrer"
+              >View supporting material ↗</a
+            >
+          </div>
+        </div>
+      </section>
+
+    </div>
+    <script src="projects.js"></script>
+  </body>
+</html>

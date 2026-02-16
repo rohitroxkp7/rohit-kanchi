@@ -19,10 +19,11 @@
           <div class="logo">RK</div>
           <ul class="nav-links">
             <li><a href="#home">Home</a></li>
-            <li><a href="work.html">Work</a></li>
+            <li><a href="research.html">Research Projects</a></li>
+            <li><a href="general.html">General Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
-          <a class="primary-button nav-cta" href="mailto:hello@rohitkanchi.com"
+          <a class="primary-button nav-cta" href="mailto:rohitskanchi@gmail.com"
             >Say hello</a
           >
         </nav>
@@ -35,30 +36,31 @@
               <img src="images/Rohit.png" alt="Portrait of Rohit Kanchi" />
             </figure>
             <div class="hero__intro-copy">
-              <p class="eyebrow">Computational Fluid Dynamics Engineer</p>
+              <p class="eyebrow">Computational Fluid Dynamics (CFD) Engineer</p>
               <h1>
-                I'm Rohit Kanchi—an engineer who designs end-to-end product
-                experiences across AI-powered tools, consumer apps, and internal
-                platforms. I work with focused teams to ship standout work fast.
+                Hello there. I'm Rohit Sunil Kanchi, a Graduate Research Assistant at the University of Tennessee, Knoxville in the <a href="https://sichenghe.github.io/" target="_blank" rel="noopener noreferrer">CODES</a> research group.
+               </h1>
+               <h1> 
+                I specialize in CFD for computational aerodynamics, adjoint-based differentiable modal analysis and gradient-based optimization frameworks.
               </h1>
             </div>
           </div>
           <div class="cta-group">
             <a class="primary-button" href="#contact">Get in touch</a>
-            <a class="secondary-button" href="work.html">See recent work</a>
+            <a class="secondary-button" href="research.html">See recent work</a>
           </div>
           <ul class="stats">
             <li>
-              <span class="stat-value">6+</span>
-              <span class="stat-label">Years building products</span>
+              <span class="stat-value">4+</span>
+              <span class="stat-label">Years in computational aerodynamics</span>
             </li>
             <li>
-              <span class="stat-value">24</span>
-              <span class="stat-label">Products launched</span>
+              <span class="stat-value">2+</span>
+              <span class="stat-label">Years in gradient-based optimization frameworks in numerical analysis</span>
             </li>
             <li>
               <span class="stat-value">4</span>
-              <span class="stat-label">Design systems shipped</span>
+              <span class="stat-label">First author journal publications in 3 years since joining UT Knoxville</span>
             </li>
           </ul>
         </div>
@@ -66,15 +68,20 @@
         <aside class="hero__panel">
           <div class="panel-card focus">
             <p class="eyebrow small">Current focus</p>
-            <h3>High-fidelity CFD pipelines</h3>
+            
             <p>
-              Rapid prototyping of turbulence solvers, contour tooling, and
-              visual layers that make flow behavior obvious to every teammate.
+              > Rapid prototyping of differentiable algorithms in modal analysis techniques.
+            </p>
+            <p>
+              > Scale up said algorithms to large scale CFD problems such as full aircraft configurations.
+            </p>
+            <p>
+              > Integrating AI into CFD pipelines.
             </p>
           </div>
           <div class="panel-card location">
             <p class="eyebrow small">Based in</p>
-            <p>San Francisco · Working remotely worldwide</p>
+            <p>Knoxville, TN, USA</p>
           </div>
         </aside>
       </main>
@@ -82,32 +89,58 @@
       <section class="sneak-peek" id="work">
         <div class="sneak-peek__header">
           <p class="eyebrow small">Sneak peek</p>
-          <h2>Visualization showcase</h2>
+          <h2>Visualization Showcase</h2>
           <p class="hero__summary">
-            Placeholder renders from recent CFD studies. Tap any tile to head to
-            the Work room for deeper dives.
+            Tap on any tile to head to the projects page for deeper dives.
           </p>
         </div>
         <div class="peek-grid">
-          <a class="peek-card" href="work.html">
-            <div class="peek-visual placeholder-1"></div>
+          <a class="peek-card" href="research.html#ngv-study">
+            <div class="peek-media zoom-out">
+              <img
+                src="project_data/published/ngv/shockwaves.png"
+                alt="Schlieren vs shadowgraph comparison"
+              />
+            </div>
             <div>
-              <h3>Transient plume gradients</h3>
-              <p>Contour plot placeholder</p>
+              <h3>LS89 blade shock comparison</h3>
+              <p>
+                Comparison of the Schlieren snapshot (left) and density gradient
+                based shadowgraph (right) from simulation for the LS89 blade.
+              </p>
             </div>
           </a>
-          <a class="peek-card" href="work.html">
-            <div class="peek-visual placeholder-2"></div>
+          <a class="peek-card" href="research.html#diffsvd">
+            <div class="peek-media">
+              <img
+                src="project_data/published/diffsvd/animation.gif"
+                alt="POD mode sensitivity animation"
+              />
+            </div>
             <div>
-              <h3>Turbine wake panel</h3>
-              <p>3D iso-surface placeholder</p>
+              <h3>Temporal POD sensitivities</h3>
+              <p>
+                Temporal animation of the 6th POD mode sensitivity overlaid on
+                vortical structures in flow over flat plate.
+              </p>
             </div>
           </a>
-          <a class="peek-card" href="work.html">
-            <div class="peek-visual placeholder-3"></div>
+          <a class="peek-card" href="general.html#transonic-buffet">
+            <div class="peek-media">
+              <video
+                src="project_data/general/transonic_buffet/airfoil_shock_video2.mp4"
+                autoplay
+                muted
+                loop
+                playsinline
+              ></video>
+            </div>
             <div>
-              <h3>Velocity stack</h3>
-              <p>Particle trace placeholder</p>
+              <h3>Transonic Buffet</h3>
+              <p>
+                3D extruded wing OAT15A airfoil transonic buffet simulated using
+                ADflow.
+              </p>
             </div>
           </a>
         </div>
@@ -119,7 +152,7 @@
         <div class="contact-links">
           <a
             class="contact-card"
-            href="https://www.researchgate.net/profile/Rohit-Kanchi"
+            href="https://www.researchgate.net/profile/Rohit-Kanchi-2?ev=hdr_xprf"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -130,14 +163,14 @@
             <span>ResearchGate</span>
             <span class="contact-arrow">&rsaquo;</span>
           </a>
-          <a class="contact-card" href="mailto:hello@rohitkanchi.com">
-            <img src="images/utk.webp" alt="University of Tennessee Knoxville" />
+          <a class="contact-card" href="mailto:rohitskanchi@gmail.com">
+            <img src="images/gmail.png" alt="Gmail logo" />
             <span>Email</span>
             <span class="contact-arrow">&rsaquo;</span>
           </a>
           <a
             class="contact-card"
-            href="https://www.linkedin.com/in/rohitkanchi"
+            href="https://www.linkedin.com/in/rohit-kanchi-7190b0190/"
             target="_blank"
             rel="noopener noreferrer"
           >

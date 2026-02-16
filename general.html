@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>General Projects | Rohit Kanchi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-grid">
+      <header class="site-header">
+        <nav class="nav">
+          <div class="logo">RK</div>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research Projects</a></li>
+            <li><a href="general.html" class="active">General Projects</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+          <a class="primary-button nav-cta" href="mailto:hello@rohitkanchi.com"
+            >Say hello</a
+          >
+        </nav>
+      </header>
+
+      <section class="work-intro">
+        <p class="eyebrow">General projects</p>
+        <h1>This page presents the general projects to date</h1>
+      </section>
+
+      <section class="work-section">
+        <header class="work-section__header">
+          <h2>Vorticity Streamfunction based 2D laminar NS solver</h2>
+        </header>
+        <div class="case">
+          <div class="case__media">
+            <button class="slider-btn prev" aria-label="Previous slide">‹</button>
+            <div class="case__slider" data-autoplay="30000">
+              <figure class="case-slide">
+                <video
+                  class="zoom-video"
+                  src="project_data/general/solver/Re_100_with_rot_psi_evolution.mp4"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  controls
+                  data-speed="5"
+                ></video>
+                <figcaption>
+                  Cylinder vortex shedding at Re 100. Cylinder is rotated
+                  initially to excite unstable modes and drive a limit-cycle
+                  shedding regime (streamlines shown).
+                </figcaption>
+              </figure>
+              <figure class="case-slide">
+                <img
+                  src="project_data/general/solver/mesh_snapshot2.png"
+                  alt="Airfoil mesh snapshot"
+                />
+                <figcaption>
+                  Far-field O-grid for the airfoil. Mesh generated using pyHyp.
+                </figcaption>
+              </figure>
+              <figure class="case-slide">
+                <video
+                  src="project_data/general/solver/Re100psi.mp4"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  controls
+                ></video>
+                <figcaption>
+                  Unsteady simulation at Re 100 for a high angle-of-attack
+                  airfoil. Streamlines highlight the separated flow region.
+                </figcaption>
+              </figure>
+            </div>
+            <button class="slider-btn next" aria-label="Next slide">›</button>
+          </div>
+          <div class="case__details">
+            <p>
+              This project was an outcome of a graduate course on CFD I took at the University of Tennessee, Knoxville under the guidance of Dr. Kivanc Ekici.
+              In this project, we made a direct Navier–Stokes solver with no turbulence closure; the flow is treated as laminar, and the fidelity is governed by the chosen grid and time-step.
+              The solver has the following capabilities:
+            </p>
+            <ul class="case-points">
+              <li>Unsteady restart and time marching with BDF-2 scheme.</li>
+              <li>Finite differenced end to end.</li>
+              <li>Grid transformation techniques to convert O grid or C grid into uniform rectangular 2D grid.</li>
+              <li>Fully coupled fully implicit vorticity streamfunction formulation.</li>
+              <li>Uses Jacobian to march NSE in time with pseudo time stepping and Newton like iterations per time step.</li>
+              <li>Can be extended to any geometry that supports body-fitted grid (Eg: Airfoil as shown in video).</li>
+            </ul>
+            <a
+              class="text-link"
+              href="project_data/general/solver/Report.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Download the full report ↗</a
+            >
+            <a
+              class="text-link"
+              href="https://github.com/rohitroxkp7/LamVorti2D"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Get the code here ↗</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="work-section">
+        <header class="work-section__header">
+          <h2>Transonic Buffet</h2>
+        </header>
+        <div class="case" id="transonic-buffet">
+          <div class="case__media">
+            <button class="slider-btn prev" aria-label="Previous slide">‹</button>
+            <div class="case__slider" data-autoplay="6000">
+              <figure class="case-slide">
+                <video
+                  class="zoom-video"
+                  src="project_data/general/transonic_buffet/velocity_animation.mp4"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  controls
+                ></video>
+                <figcaption>
+                  2D transonic buffet for the OAT15A airfoil simulated using
+                  ADflow.
+                </figcaption>
+              </figure>
+              <figure class="case-slide">
+                <video
+                  src="project_data/general/transonic_buffet/airfoil_shock_video2.mp4"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  controls
+                ></video>
+                <figcaption>
+                  3D extruded wing OAT15A airfoil transonic buffet simulated
+                  using ADflow.
+                </figcaption>
+              </figure>
+            </div>
+            <button class="slider-btn next" aria-label="Next slide">›</button>
+          </div>
+          <div class="case__details">
+            <p>
+              2D and 3D simulation of the shockwave boundary layer interaction (SWBLI) based shock oscillation phenomenon termed transonic buffet. This is part of an ongoing project and also a part of my contributions to ADflow solver and I am the first to simulate this using ADflow.
+            </p>
+            <a
+              class="text-link"
+              href="https://github.com/mdolab/adflow"
+              target="_blank"
+              rel="noopener noreferrer"
+              >ADflow ↗</a
+            >
+            <!--<ul class="case-points">
+              <li>Placeholder: flow setup + boundary conditions</li>
+              <li>Placeholder: coupling strategy for flutter/buffet</li>
+              <li>Placeholder: visualization tooling roadmap</li>
+            </ul>-->
+            <!--<a class="text-link" href="#" target="_blank" rel="noopener noreferrer"
+              >Supporting notes coming soon ↗</a
+            > -->
+          </div>
+        </div>
+      </section>
+
+      <section class="work-section">
+        <header class="work-section__header">
+          <h2>Linear Stability Analysis using ADflow</h2>
+        </header>
+        <div class="case">
+          <div class="case__media">
+            <button class="slider-btn prev" aria-label="Previous slide">‹</button>
+            <div class="case__slider" data-autoplay="6000">
+              <figure class="case-slide">
+                <img src="project_data/general/lst/fig1.png" alt="Unsteady vortex shedding using ADflow" />
+                <figcaption>Unsteady vortex shedding using ADflow at Re 100.</figcaption>
+              </figure>
+              <figure class="case-slide">
+                <img src="project_data/general/lst/fig2.png" alt="Unstable eigenmodes comparison" />
+                <figcaption>
+                  Unstable eigenmodes from ADflow compared with Marquet et al.
+                </figcaption>
+              </figure>
+              <figure class="case-slide">
+                <img src="project_data/general/lst/fig3.png" alt="OAT15A eigenmode density contour" />
+                <figcaption>
+                  Density contour for base flow of OAT15A transonic buffet at
+                  Mach = 0.73, Reynolds = 3.2 Mil, angle of attack = 4° and the corresponding unstable eigenmode.
+                </figcaption>
+              </figure>
+            </div>
+            <button class="slider-btn next" aria-label="Next slide">›</button>
+          </div>
+          <div class="case__details">
+            <p>
+              This is part of an ongoing project and also a part of my contributions to ADflow solver. In this work, I used ADflow solver's in built automatic differentiation tools to extract the finite volume residual-state Jacobian and use it for linear stability analysis. A formal GitHub repository for the code is in progress.
+              Below are the key contributions in this work:
+            </p>
+            <ul class="case-points">
+              <li>Simulated cylinder vortex shedding canonical case and performed LST for the steady unstable base flow at different Reynolds numbers.</li>
+              <li>Benchmarked eigenvalues and eigenmodes from LST against those in literature - See
+              <a
+                href="https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/abs/sensitivity-analysis-and-passive-control-of-cylinder-flow/97105BD2D3CE46024DD53511D437136F"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Marquet et al.</a
+              >
+              for the classic sensitivity analysis reference.</li>
+              <li>Performed the LST analysis for transonic buffet (see the work in window above this for the unsteady simulation for buffet).</li>
+            </ul>
+            <a
+              class="text-link"
+              href="project_data/general/lst/lst_report_adflow.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Click here to download report ↗</a
+            >
+            <a
+              class="text-link"
+              href="https://github.com/mdolab/adflow"
+              target="_blank"
+              rel="noopener noreferrer"
+              >ADflow ↗</a
+            >
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="projects.js"></script>
+  </body>
+</html>
